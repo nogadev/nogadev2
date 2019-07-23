@@ -16,13 +16,20 @@
         <!-- load css for cubeportfolio -->
         <link rel="stylesheet" type="text/css" href="cubeportfolio/css/cubeportfolio.min.css">     
         <link href="css/style-leftNavbar.css" rel="stylesheet">
+
+         <!--- Estilo del Slider --->
+        <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+        
+        <!--- Version 109 de JQuery para el Slider--->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+        
     </head>
 
     <body>
 
         <section id="home" class="dzsparallaxer auto-init dzsparallaxer---window-height use-loading" style="position: relative; height: 800px;" data-options='{  mode_scroll: "normal" }'>
             <div class="divimage dzsparallaxer--target " data-src="nogadev-files/bg1.jpg" style="width: 100%; height: 130%; background-image: url()">
-                <div class="semi-black-overlay"></div>
+               <div class="semi-black-overlay"></div>
                 <div class="content-table">
                     <div class="content-middle pt80 ">
                         <div class="container">
@@ -34,7 +41,8 @@
                                     <p class="lead text-white-gray">
                                      Nuestra pasión es ayudarte a lograr el éxito de tu compañía.
                                     </p>
-<!--                                     <div class="circle-button">
+                          <!--- VIDEO 
+                      <div class="circle-button">
                                         <a href="https://www.youtube.com/watch?v=GaPrU1nW6x0" class="modal-video circle-icon-button mr-2">
                                              <i class="fa fa-play"></i>
                                         </a> <span class="text-white-gray"></span>
@@ -46,14 +54,18 @@
 
                 </div><!--parallax hero-->
             </div><!--parallax image div-->
+            
             <div class="mouse-down"><a data-scroll href="#services"><i class="fa fa-angle-down fa-3x text-white"></i></a></div>
-        </section>
+       </section>
         <!--intro section end-->
+
+
+<!----- CONTAINER SERVICIOS------>
         <section id='services' class='pt90 pb60'>
             <div class='container'>
                 <div class='row align-items-center'>
-                    <div class='col-md-4 mb30'>
-                        <div class='section-title title-left mb30'>
+                    <div class='col-lg-12  text-center mb30'>
+                       <div class='section-title  mb30'>
                             <span class="section-subTitle">Qué hacemos</span>
                             <h3 class='mb0'>
                                 Nuestros servicios
@@ -63,40 +75,83 @@
                             Proveemos el mejor servicio a nuestros clientes.
                         </p>
                         <a data-scroll href='#contact' class='btn btn-outline-secondary'>Quiero saber más!</a>
+
+                        <!--una vez que este el boton de contacto flotante, ELIMINAR este boton-->
                     </div>
-                    <div class='col-md-12 offset-md-1'>
-                        <div class='row'>
-                            <div class='col-md-6 mb30 text-center'>
-                                <i class='icon-pictures fa-3x mb20 text-primary'></i>
-                                <h5 class='text-uppercase mb20'>Consultoría SAP B1</h5>
-                                <p>
-                                    Te asesoramos en la implementación y mantenimiento de SAP B1, damos formación y consultoría en todos los módulos del sistema.
-                                </p>
-                            </div>
-                            <div class='col-md-6 mb30 text-center'>
-                                <i class='icon-toolbox fa-3x mb20 text-primary'></i>
-                                <h5 class='text-uppercase mb20'>Desarrollo web y Aplicaciones</h5>
-                                <p>
-                                    Construimos tu aplicación a medida. Animáte a diferenciarte de tu competencia. Te ayudamos en la construcción de la idea, y la llevamos a cabo!
-                                </p>
-                            </div>
-                            <div class='col-md-6 mb30 text-center'>
-                                <i class='icon-search fa-3x mb20 text-primary'></i>
-                                <h5 class='text-uppercase mb20'>Reportes Financieros</h5>
-                                <p>
-                                    Sabemos lo importante que es tener información inmediata para tomar buenas decisiones. Si has escuchado de Crystal Reports, SAP Lumira, Big Data y Visualización de datos, llamanos y te contamos de que se trata.
-                                </p>
-                            </div>
-                            <div class='col-md-6 mb30 text-center'>
-                                <i class='icon-lightbulb fa-3x mb20 text-primary'></i>
-                                <h5 class='text-uppercase mb20'>Desarrollo de soluciones</h5>
-                                <p>
-                                    Cada industria tiene sus propias necesidades, y cada negocio también. Te ayudamos en la construcción de soluciones a medida a través de la programación. Te ayudamos con Addon para SAP B1, SQL HANA, Macros VBA y mucho más.
-                                </p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+       </section>
+<!--------- FIN CONTAINER SERVICIOS--------->
+
+<!---------- CONTAINER DESCRIPCION SERVICIOS----------->
+
+    <div class="container">
+        <div class="row ">
+            <div class='col-lg-3 text-center'>
+                <i class='icon-pictures fa-3x mb20 text-primary'></i>
+                    <h5 class='text-uppercase mb20'>Consultoría SAP B1</h5>
+                        <p class="text-justify">
+                             Te asesoramos en la implementación y mantenimiento de SAP B1, damos formación y consultoría en todos los módulos del sistema.
+                        </p>
+            </div>
+            
+            <div class='col-lg-3 text-center'>
+                <i class='icon-toolbox fa-3x mb20 text-primary'></i>
+                    <h5 class='text-uppercase mb20'>Desarrollo web y Aplicaciones</h5>
+                        <p>
+                             Construimos tu aplicación a medida. Animáte a diferenciarte de tu competencia. Te ayudamos en la construcción de la idea, y la llevamos a cabo!
+                        </p>
+            </div>
+                            
+            <div class='col-lg-3 text-center'>
+                <i class='icon-search fa-3x mb20 text-primary'></i>
+                    <h5 class='text-uppercase mb20'>Reportes Financieros</h5>
+                        <p>
+                             Sabemos lo importante que es tener información inmediata para tomar buenas decisiones. Si has escuchado de Crystal Reports, SAP Lumira, Big Data y Visualización de datos, llamanos y te contamos de que se trata.
+                        </p>
+            </div>
+                            
+            <div class='col-lg-3 text-center'>
+                <i class='icon-lightbulb fa-3x mb20 text-primary'></i>
+                    <h5 class='text-uppercase mb20'>Desarrollo de soluciones</h5>
+                        <p>
+                             Cada industria tiene sus propias necesidades, y cada negocio también. Te ayudamos en la construcción de soluciones a medida a través de la programación. Te ayudamos con Addon para SAP B1, SQL HANA, Macros VBA y mucho más.
+                        </p>
+            </div>
+        </div>
+     </div>
+    <!---FIN CONTAINER DESCRIPCION SERVICIOS --->
+
+    <!--- SLIDER IMAGENES SISTEMAS --->
+            <section class="sistemas">
+                <div class="slider">
+                    <div class="slider-1 text-center">
+                        <img src="nogadev-files/logoCrystal.png">
+                    
                     </div>
-                    <div class="col-md-3 text-center">
+                     
+                    <div class="slider-1 text-center">
+                        <img src="nogadev-files/logonodejs.png">
+                    </div>
+                     <div class="slider-1 text-center">
+                        <img src="nogadev-files/logoSap-BusinessOne.png">
+                    
+                    </div>
+                     
+                    <div class="slider-1 text-center">
+                        <img src="nogadev-files/logoSap-Lumira.png">
+                    </div>
+
+                </div>
+
+            </section>
+
+    <!--- FIN SLIDER IMAGENES SISTEMAS --->
+
+
+
+
+             <!--/. <div class="col-md-3 text-center">
                             <img src="nogadev-files/sap-logo.jpg" height="150px" width="200px"/>
                     </div>
                     <div class="col-md-3 text-center">
@@ -110,7 +165,10 @@
                     </div>
                 </div>
             </div>
-        </section><!--/.services-->
+        </section>services-->
+
+
+   <!----- PRIMER BANNER ---->     
 
         <div class='pt50 pb40 bg-primary'>
             <div class='container'>
@@ -119,18 +177,19 @@
                         <h3 class='text-white '>“ Los únicos límites son, como siempre, los de la visión.”</h3>
                         <p class='lead text-white-gray'>― James Broughton</p>
                     </div>
-<!--                     <div class='col-md-4 text-center'>
+                 <!--    <div class='col-md-4 text-center'>
                         <a data-scroll href='#contact' class='hover-me1'></a>
                     </div> -->
                 </div>
             </div>
         </div>
-        
+    <!----- FIN PRIMER BANNER  ----->   
+
         <section id="about" class="pt20 pb30">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-12 mb20">
-                        <div class="section-title title-left mb20 text-left">
+                    <div class="col-lg-12-12 mb20">
+                        <div class="section-title title-left mb20 text-center">
                             <span class="section-subTitle">Quienes somos</span>
                             <h3 class='mb0 h3 font300'>
                                 Somos una agencia de consultoría con base en Mendoza y Lima, donde brindamos soluciones digitales 
@@ -154,6 +213,8 @@
                         </div>
                     </div>
                 </div> -->
+
+        <!----- GRID QUIENES SOMOS? ----->          
                 <div class='row'>
                     <div class='col-md-4 mb10'>
                         <img src='nogadev-files/img/15_sap-business-one-areas.png' height="230px" width="320px" alt='Servicios en SAP B1' class=' center-img shadow-card mb10'>
@@ -178,9 +239,12 @@
                     </div>
                 </div>
             </div>
-        </section><!--section end about-->
+         <!---- FIN GRID QUIENES SOMOS?---->    
+        </section>
+   <!---- FIN SECCION QUIENES SOMOS? ----->
 
 
+   <!----- SEGUNDO BANNER ---->
         <div class="cta bg-parallax parallax-overlay overlay-primary pt90 angle-top bg-white pb60" data-jarallax-video="https://www.youtube.com/watch?v=I6jmZ5plZ3o&" data-jarallax-orignal-styles="null">
             <div class="container">
                 <div class="row align-items-center">
@@ -196,11 +260,14 @@
                     </div>
                 </div>
             </div>
-        </div><!--/cta-->
+        </div>
+    <!-----FIN SEGUNDO BANNER ---->    
+
+
         <div class="dzsparallaxer auto-init height-is-based-on-content "  data-options='{   direction: "reverse"}'>
             <div class="divimage dzsparallaxer--target " style="width: 101%; height: 130%; background-image: url(images/bg2.jpg)">
             </div>
-<div class="semi-black-overlay"></div>
+        <div class="semi-black-overlay"></div>
             <div class="container pt100 pb70">
                 <div class="row pb50">
                     <div class="col-md-8 ml-auto mr-auto wow bounceIn" data-wow-delay=".2s">
@@ -600,6 +667,9 @@
         <!--back to top-->
         <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="fa fa-angle-up"></i></a>
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+
+        <script src="sss/sss.js"></script>
         <script type="text/javascript" src="js/plugins/plugins.js"></script> 
         <script type="text/javascript" src="js/onepage-leftNav.js"></script> 
         <!--dz parallaxer-->
