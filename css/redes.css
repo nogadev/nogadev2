@@ -1,0 +1,169 @@
+.redes{
+
+	top: 200px;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+
+}
+
+.consulta {
+
+    top: 700px;
+    margin-right: 30px;
+	position: fixed;
+	z-index: 100;
+	right: 0;
+
+}
+
+.limpia{
+	clear: both;
+}
+
+#facebook a{
+	background: #3b5998;
+	padding: 10px 25px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all 0.4s ease; /*esta propiedad hace que sea una curva de rapidez*/
+
+}
+
+#facebook a:hover {
+	background:#000;
+	padding: 10px 50px;
+
+}
+#instagram a{
+	background:#fbad50;
+	padding: 10px 25px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all 0.4s ease; /*esta propiedad hace que sea una curva de rapidez*/
+
+}
+
+#instagram a:hover {
+	background:#000;
+	padding: 10px 50px;
+
+}
+#tw a{
+	background: #55acee;
+	padding: 10px 25px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all 0.4s ease; /*esta propiedad hace que sea una curva de rapidez*/
+
+}
+
+#tw a:hover {
+	background:#000;
+	padding: 10px 50px;
+
+}
+
+
+#linkedin a{
+	background:#007bb5;
+	padding: 10px 25px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all 0.4s ease; /*esta propiedad hace que sea una curva de rapidez*/
+
+}
+
+#linkedin a:hover {
+	background:#000;
+	padding: 10px 50px;
+
+}
+
+#mail a{
+	background: #dd4b39;
+	padding: 10px 25px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all 0.4s ease; /*esta propiedad hace que sea una curva de rapidez*/
+
+}
+
+#mail a:hover {
+	background:#000;
+	padding: 10px 50px;
+
+}
+
+#whatsapp a{
+	background: #4dc247;
+	padding: 10px 25px;
+	color: #fff;
+	text-decoration: none;
+	width: 55px;
+	transition: all 0.4s ease; /*esta propiedad hace que sea una curva de rapidez*/
+
+}
+
+#whatsapp a:hover {
+	background:#000;
+	padding: 10px 50px;
+
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;*/
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+
