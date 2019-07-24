@@ -198,21 +198,21 @@
                 <div class='row'>
                     <div class='col-md-4 mb10'>
                         <img src='nogadev-files/sbo.jpg'  alt='Servicios en SAP B1' class='img-fluid center-img shadow-card mb10'>
-                        <h5 class='text-uppercase'>SAP Business One</h5>
+                        <h5 class='text-uppercase text-center'>SAP Business One</h5>
                         <p>
                             Contamos con un equipo de profesionales certificados, con basta experiencia en implementación y consultoría de la herramienta. Además desarrollamos soluciones ad hoc.   
                         </p>
                     </div>
                     <div class='col-md-4 mb40'>
                         <img src='nogadev-files/dw.jpg' class='img-fluid center-img shadow-card mb10'>
-                        <h5 class='text-uppercase'>Desarrollo Web</h5>
+                        <h5 class='text-uppercase text-center'>Desarrollo Web</h5>
                         <p>
                             Convertimos tus ideas en productos. Animáte a dar un paso hacia el futuro construyendo tu sitio web y aplicación, dando a conocer tu marca al mundo.  
                         </p>
                     </div>
                     <div class='col-md-4 mb40'>
                         <img src='nogadev-files/td.jpg'  class='img-fluid center-img shadow-card mb10'>
-                        <h5 class='text-uppercase'>Transformación Digital</h5>
+                        <h5 class='text-uppercase text-center'>Transformación Digital</h5>
                         <p>
                             La era del papel está llegando a su fin. Sabemos lo díficil que puede ser adaptarse al cambio, por eso te asesoramos en esta gran etapa dando soporte y creando soluciones juntos.  
                         </p>
@@ -530,20 +530,18 @@
         </section> -->
 
         
-<!--- FORMULARIO CONTACTO --->
+<!--- CONTACTO --->
         <section id="contact" class="pt80 pb50">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 pb40">
+                        <h3 class="font300 text-center">Enviános un mensaje!</h3> 
                         <div class="section-title title-left mb30">
-                            <span class="section-subTitle">Enviános un mensaje</span>
-                            <h3 class="mb0">
-                                Contacto
-                            </h3>
+                        
                         </div>
                         <ul class="list-unstyled contact-info">
                             <li>
-                                <i class="fa fa-home"></i>
+                                <i class="fa fa-location-arrow"></i>"></i>
                                 4475, España, Guaymallén, Mendoza<br> Argentina, 5521<br><a target="_blank" href="https://www.google.co.in/maps">Ver en mapa</a>
                             </li>
                             <li>
@@ -560,12 +558,16 @@
                             </li>
                         </ul>
                     </div>
+
+
+
+     <!--- FORMULARIO DE CONTACTO --->               
                     <div class="col-md-6 offset-md-1 pb40">
-                        <h3 class="font300 mb30">Enviános un mensaje!</h3>
+                        <h3 class="font300 mb30 text-center">Enviános un mensaje!</h3>
                         <div class="smart-wrap">
                             <div class="smart-forms smart-container wrap-2">
 
-                                <form method="post" action="smart-form/contact-recaptcha/php/smartprocess.php" id="smart-form">
+                                <form method="post" action="envio.php" id="smart-form">
                                     <div class="form-body">
                                         <div class="section">
                                             <label class="field prepend-icon">
@@ -591,8 +593,8 @@
                                                 <span class="field-icon"><i class="fa fa-comments"></i></span>
                                                 <span class="input-hint"> <strong>Hint:</strong> Por favor ingresa enter 80 - 300 caracteres.</span>   
                                             </label>
-                                        </div><!-- end section -->
-                                        <div class="section">  
+                                        </div>
+                                  <!-- <div class="section">  
                                             <label class="field">
                                                 <input type="text" id="g-recaptcha-response" name="g-recaptcha-response" class="smart-hidden-elem">
                                                 <div id="g-recaptcha" class="g-recaptcha" 
@@ -600,16 +602,19 @@
                                                      data-expired-callback="recaptchaResetCallback"  
                                                      data-theme="light"></div>
                                             </label>
-                                        </div> <!-- end section-->
-                                        <div class="result"></div><!-- end .result  section --> 
-                                    </div><!-- end .form-body section -->
+                                        </div> -->
+
+                                        <div class="result"></div>
+                                    </div>
+
                                     <div class="form-footer">
                                         <button type="submit" data-btntext-sending="Sending..." class="button btn btn-primary">Enviar</button>
                                         <button type="reset" class="button btn-secondary"> Cancelar </button>
-                                    </div><!-- end .form-footer section -->
+                                    </div>
                                 </form>
-                            </div><!-- end .smart-forms section -->
-                        </div><!-- end .smart-wrap section -->
+                                <div id="resultado"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -635,9 +640,9 @@
                            </li> -->
                        </ul>
                    </div>
-                   <div class=" col-md-4 clearfix socials-nav text-center">
+                <!---   <div class=" col-md-4 clearfix socials-nav text-center">
                         <span>
-                        <!--Aun no se publica la página de facebook-->
+                       
                         <a href="https://www.facebook.com" target="_blank" class="social-icon-sm si-dark si-facebook si-gray-round">
                                     <i class="fa fa-facebook"></i>
                                     <i class="fa fa-facebook"></i>
@@ -655,19 +660,27 @@
                                     <i class="fa fa-linkedin"></i>
                                 </a>
                         </span>
-                    </div>
+                    </div> --->
                     <div class='col-md-4 text-center'>
                         <span>&copy; Copyright 2019. Nogadev</span>
                     </div>
                 </div>
             </div>
         </footer>
-        <!--back to top-->
-        <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+        <div class="consulta">
+        <a href="#contact" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><i class="fa fa-home"></i>CONSULTANOS</a>
+            
+           
+            
+        </div>
+        
+      <!---Back to Top  <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="fa fa-angle-up"></i></a> --->
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
 
 
         <script src="sss/sss.js"></script>
+         <script src="js/conecta.js"></script>
         
         
         <script type="text/javascript" src="js/plugins/plugins.js"></script> 
