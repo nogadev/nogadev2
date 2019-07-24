@@ -27,7 +27,7 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 
 // Enviar correo
-$envio = mail('danielalilianagarro@gmail.com', $asunto, $contenido, $headers);
+$envio = mail('fedenogara@gmail.com', $asunto, $contenido, $headers);
 
 
 if($envio) {
